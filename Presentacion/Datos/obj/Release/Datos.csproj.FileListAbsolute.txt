@@ -1,0 +1,12 @@
+C:\Users\Roberto\Documents\GitHub\Ejercicio-C-Sharp\Presentacion\Datos\bin\Release\Datos.dll.config
+C:\Users\Roberto\Documents\GitHub\Ejercicio-C-Sharp\Presentacion\Datos\bin\Release\Datos.dll
+C:\Users\Roberto\Documents\GitHub\Ejercicio-C-Sharp\Presentacion\Datos\bin\Release\Datos.pdb
+C:\Users\Roberto\Documents\GitHub\Ejercicio-C-Sharp\Presentacion\Datos\bin\Release\EntityFramework.dll
+C:\Users\Roberto\Documents\GitHub\Ejercicio-C-Sharp\Presentacion\Datos\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\Roberto\Documents\GitHub\Ejercicio-C-Sharp\Presentacion\Datos\bin\Release\EntityFramework.xml
+C:\Users\Roberto\Documents\GitHub\Ejercicio-C-Sharp\Presentacion\Datos\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\Roberto\Documents\GitHub\Ejercicio-C-Sharp\Presentacion\Datos\obj\Release\Datos.csproj.AssemblyReference.cache
+C:\Users\Roberto\Documents\GitHub\Ejercicio-C-Sharp\Presentacion\Datos\obj\Release\Datos.csproj.CoreCompileInputs.cache
+C:\Users\Roberto\Documents\GitHub\Ejercicio-C-Sharp\Presentacion\Datos\obj\Release\Datos.csproj.CopyComplete
+C:\Users\Roberto\Documents\GitHub\Ejercicio-C-Sharp\Presentacion\Datos\obj\Release\Datos.dll
+C:\Users\Roberto\Documents\GitHub\Ejercicio-C-Sharp\Presentacion\Datos\obj\Release\Datos.pdb

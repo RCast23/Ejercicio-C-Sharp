@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="BibliotecaModelStoreContainer" CdmEntityContainer="BibliotecaEntities">
+    <EntitySetMapping Name="Categorias">
+      <EntityTypeMapping TypeName="BibliotecaModel.Categoria">
+        <MappingFragment StoreEntitySet="Categorias">
+          <ScalarProperty Name="idCategoria" ColumnName="idCategoria" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Libros">
+      <EntityTypeMapping TypeName="BibliotecaModel.Libro">
+        <MappingFragment StoreEntitySet="Libros">
+          <ScalarProperty Name="idLibro" ColumnName="idLibro" />
+          <ScalarProperty Name="idCategoria" ColumnName="idCategoria" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Autor" ColumnName="Autor" />
+          <ScalarProperty Name="FechaPublicacion" ColumnName="FechaPublicacion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LibrosUnidades">
+      <EntityTypeMapping TypeName="BibliotecaModel.LibrosUnidade">
+        <MappingFragment StoreEntitySet="LibrosUnidades">
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+          <ScalarProperty Name="idLibroUnidades" ColumnName="idLibroUnidades" />
+          <ScalarProperty Name="idLibro" ColumnName="idLibro" />
+          <ScalarProperty Name="idUbicacion" ColumnName="idUbicacion" />
+          <ScalarProperty Name="Codigo" ColumnName="Codigo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Ubicaciones">
+      <EntityTypeMapping TypeName="BibliotecaModel.Ubicacione">
+        <MappingFragment StoreEntitySet="Ubicaciones">
+          <ScalarProperty Name="idUbicacion" ColumnName="idUbicacion" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Ventas">
+      <EntityTypeMapping TypeName="BibliotecaModel.Venta">
+        <MappingFragment StoreEntitySet="Ventas">
+          <ScalarProperty Name="idVenta" ColumnName="idVenta" />
+          <ScalarProperty Name="idLibroUnidades" ColumnName="idLibroUnidades" />
+          <ScalarProperty Name="FechaVenta" ColumnName="FechaVenta" />
+          <ScalarProperty Name="Precio" ColumnName="Precio" />
+          <ScalarProperty Name="NombreCliente" ColumnName="NombreCliente" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="ObtenerLibrosConUnidades" FunctionName="BibliotecaModel.Store.ObtenerLibrosConUnidades">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BibliotecaModel.ObtenerLibrosConUnidades_Result">
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Autor" ColumnName="Autor" />
+          <ScalarProperty Name="numOcurrencias" ColumnName="numOcurrencias" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+  </EntityContainerMapping>
+</Mapping>
