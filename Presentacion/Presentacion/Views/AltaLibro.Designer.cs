@@ -1,0 +1,163 @@
+﻿namespace Presentacion.Views
+{
+    partial class AltaLibro
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.btnAceptar = new System.Windows.Forms.Button();
+            this.btnCancelar = new System.Windows.Forms.Button();
+            this.cmbCategoria = new System.Windows.Forms.ComboBox();
+            this.btnNombre = new System.Windows.Forms.TextBox();
+            this.btnAutor = new System.Windows.Forms.TextBox();
+            this.cmbEstado = new System.Windows.Forms.ComboBox();
+            this.SuspendLayout();
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(31, 64);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(56, 16);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Nombre";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(32, 93);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(38, 16);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "Autor";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(32, 121);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(66, 16);
+            this.label3.TabIndex = 5;
+            this.label3.Text = "Categoria";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(32, 149);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(50, 16);
+            this.label4.TabIndex = 7;
+            this.label4.Text = "Estado";
+            // 
+            // btnAceptar
+            // 
+            this.btnAceptar.Location = new System.Drawing.Point(69, 214);
+            this.btnAceptar.Name = "btnAceptar";
+            this.btnAceptar.Size = new System.Drawing.Size(75, 23);
+            this.btnAceptar.TabIndex = 8;
+            this.btnAceptar.Text = "Aceptar";
+            this.btnAceptar.UseVisualStyleBackColor = true;
+            this.btnAceptar.Click += new System.EventHandler(this.btnAceptar_Click);
+            // 
+            // btnCancelar
+            // 
+            this.btnCancelar.Location = new System.Drawing.Point(150, 214);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(75, 23);
+            this.btnCancelar.TabIndex = 9;
+            this.btnCancelar.Text = "Cancelar";
+            this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
+            // 
+            // cmbCategoria
+            // 
+            this.cmbCategoria.FormattingEnabled = true;
+            this.cmbCategoria.Location = new System.Drawing.Point(99, 115);
+            this.cmbCategoria.Name = "cmbCategoria";
+            this.cmbCategoria.Size = new System.Drawing.Size(121, 24);
+            this.cmbCategoria.TabIndex = 10;
+            // 
+            // btnNombre
+            // 
+            this.btnNombre.Location = new System.Drawing.Point(99, 59);
+            this.btnNombre.Name = "btnNombre";
+            this.btnNombre.Size = new System.Drawing.Size(121, 22);
+            this.btnNombre.TabIndex = 0;
+            // 
+            // btnAutor
+            // 
+            this.btnAutor.Location = new System.Drawing.Point(100, 88);
+            this.btnAutor.Name = "btnAutor";
+            this.btnAutor.Size = new System.Drawing.Size(121, 22);
+            this.btnAutor.TabIndex = 2;
+            // 
+            // cmbEstado
+            // 
+            this.cmbEstado.FormattingEnabled = true;
+            this.cmbEstado.Location = new System.Drawing.Point(100, 145);
+            this.cmbEstado.Name = "cmbEstado";
+            this.cmbEstado.Size = new System.Drawing.Size(121, 24);
+            this.cmbEstado.TabIndex = 11;
+            // 
+            // AltaLibro
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(281, 262);
+            this.Controls.Add(this.cmbEstado);
+            this.Controls.Add(this.cmbCategoria);
+            this.Controls.Add(this.btnCancelar);
+            this.Controls.Add(this.btnAceptar);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.btnAutor);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.btnNombre);
+            this.Name = "AltaLibro";
+            this.Text = "AltaLibro";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button btnAceptar;
+        private System.Windows.Forms.Button btnCancelar;
+        private System.Windows.Forms.ComboBox cmbCategoria;
+        private System.Windows.Forms.TextBox btnNombre;
+        private System.Windows.Forms.TextBox btnAutor;
+        private System.Windows.Forms.ComboBox cmbEstado;
+    }
+}
