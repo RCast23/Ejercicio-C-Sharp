@@ -41,7 +41,7 @@
             // 
             // btnPrueba
             // 
-            this.btnPrueba.Location = new System.Drawing.Point(12, 76);
+            this.btnPrueba.Location = new System.Drawing.Point(12, 38);
             this.btnPrueba.Name = "btnPrueba";
             this.btnPrueba.Size = new System.Drawing.Size(181, 78);
             this.btnPrueba.TabIndex = 0;
@@ -51,17 +51,19 @@
             // 
             // lblResultado
             // 
+            this.lblResultado.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblResultado.AutoSize = true;
-            this.lblResultado.Location = new System.Drawing.Point(74, 224);
+            this.lblResultado.Location = new System.Drawing.Point(43, 155);
             this.lblResultado.Name = "lblResultado";
             this.lblResultado.Size = new System.Drawing.Size(44, 16);
             this.lblResultado.TabIndex = 1;
             this.lblResultado.Text = "label1";
+            this.lblResultado.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lblResultado.Visible = false;
             // 
             // btnAltaLibro
             // 
-            this.btnAltaLibro.Location = new System.Drawing.Point(256, 76);
+            this.btnAltaLibro.Location = new System.Drawing.Point(237, 38);
             this.btnAltaLibro.Name = "btnAltaLibro";
             this.btnAltaLibro.Size = new System.Drawing.Size(167, 78);
             this.btnAltaLibro.TabIndex = 2;
@@ -71,7 +73,7 @@
             // 
             // btnModificacion
             // 
-            this.btnModificacion.Location = new System.Drawing.Point(449, 76);
+            this.btnModificacion.Location = new System.Drawing.Point(410, 38);
             this.btnModificacion.Name = "btnModificacion";
             this.btnModificacion.Size = new System.Drawing.Size(167, 78);
             this.btnModificacion.TabIndex = 3;
@@ -81,7 +83,7 @@
             // 
             // btnEliminacion
             // 
-            this.btnEliminacion.Location = new System.Drawing.Point(351, 162);
+            this.btnEliminacion.Location = new System.Drawing.Point(237, 124);
             this.btnEliminacion.Name = "btnEliminacion";
             this.btnEliminacion.Size = new System.Drawing.Size(167, 78);
             this.btnEliminacion.TabIndex = 4;
@@ -101,7 +103,7 @@
             // 
             // btnConsultaLibros
             // 
-            this.btnConsultaLibros.Location = new System.Drawing.Point(632, 76);
+            this.btnConsultaLibros.Location = new System.Drawing.Point(621, 38);
             this.btnConsultaLibros.Name = "btnConsultaLibros";
             this.btnConsultaLibros.Size = new System.Drawing.Size(167, 78);
             this.btnConsultaLibros.TabIndex = 6;
@@ -111,7 +113,7 @@
             // 
             // btnConsultaLibrosConUnidades
             // 
-            this.btnConsultaLibrosConUnidades.Location = new System.Drawing.Point(632, 162);
+            this.btnConsultaLibrosConUnidades.Location = new System.Drawing.Point(621, 124);
             this.btnConsultaLibrosConUnidades.Name = "btnConsultaLibrosConUnidades";
             this.btnConsultaLibrosConUnidades.Size = new System.Drawing.Size(167, 78);
             this.btnConsultaLibrosConUnidades.TabIndex = 7;

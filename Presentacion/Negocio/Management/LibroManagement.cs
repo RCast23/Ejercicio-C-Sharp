@@ -13,34 +13,82 @@ namespace Negocio.Management
     {
         public List<LibrosDTO> ObtenerLibros()
         {
-            List<Libro> LibrosDatos = new Datos.Repositories.LibroRepositorio().ObtenerLibros();
-            List<LibrosDTO> ListadoRetorno = new List<LibrosDTO>();
-            foreach (var item in LibrosDatos)
+            List<Libro> librosDatos = new Datos.Repositories.LibroRepositorio().ObtenerLibros();
+            List<LibrosDTO> listadoRetorno = new List<LibrosDTO>();
+            foreach (var item in librosDatos)
             {
                 var dto = new LibrosDTO();
+                dto.idLibro = item.idLibro;
                 dto.Nombre = item.Nombre;
                 dto.Autor = item.Autor;
                 dto.FechaPublicacion = item.FechaPublicacion;
                 dto.idCategoria = item.idCategoria;
-                ListadoRetorno.Add(dto);
+                listadoRetorno.Add(dto);
             }
-            return ListadoRetorno;
+            return listadoRetorno;
         }
 
 
         public List<LibroConUnidadesDTO> ObtenerLibrosUnidades()
         {
-            List<ObtenerLibrosConUnidades_Result> LibrosDatos = new Datos.Repositories.LibroRepositorio().ObtenerLibrosConUnidades();
-            List<LibroConUnidadesDTO> ListadoRetorno = new List<LibroConUnidadesDTO>();
-            foreach (var item in LibrosDatos)
+            List<ObtenerLibrosConUnidades_Result> librosDatos = new Datos.Repositories.LibroRepositorio().ObtenerLibrosConUnidades();
+            List<LibroConUnidadesDTO> listadoRetorno = new List<LibroConUnidadesDTO>();
+            foreach (var item in librosDatos)
             {
                 var dto = new LibroConUnidadesDTO();
                 dto.Nombre = item.Nombre;
                 dto.Autor = item.Autor;
                 dto.numOcurrencias = item.numOcurrencias;
-                ListadoRetorno.Add(dto);
+                listadoRetorno.Add(dto);
             }
-            return ListadoRetorno;
+            return listadoRetorno;
+        }
+
+        public List<CategoriaDTO> ObtenerCategorias()
+        {
+            List<Categoria> librosDatos = new Datos.Repositories.LibroRepositorio().ObtenerCategorias();
+            List<CategoriaDTO> listadoRetorno = new List<CategoriaDTO>();
+            foreach (var item in librosDatos)
+            {
+                var dto = new CategoriaDTO();
+                dto.Nombre = item.Nombre;
+                dto.idCategoria = item.idCategoria;
+                listadoRetorno.Add(dto);
+            }
+            return listadoRetorno;
+        }
+        public void AltaLibro(LibrosDTO libroAlta)
+        {
+            Libro libroBaseDatos = new Libro();
+
+            libroBaseDatos.idCategoria = libroAlta.idCategoria;
+            libroBaseDatos.Nombre = libroAlta.Nombre;
+            libroBaseDatos.Autor = libroAlta.Autor;
+            libroBaseDatos.FechaPublicacion = libroAlta.FechaPublicacion;
+            new Datos.Repositories.LibroRepositorio().AltaLibro(libroBaseDatos);
+        }
+
+        public void ModificarLibro(LibrosDTO libroModificado)
+        {
+            Libro libroBaseDatos = new Libro();
+
+            libroBaseDatos.idLibro = libroModificado.idLibro;
+            libroBaseDatos.idCategoria = libroModificado.idCategoria;
+            libroBaseDatos.Nombre = libroModificado.Nombre;
+            libroBaseDatos.Autor = libroModificado.Autor;
+            libroBaseDatos.FechaPublicacion = libroModificado.FechaPublicacion;
+
+            new Datos.Repositories.LibroRepositorio().ModificarLibro(libroBaseDatos);
+        }
+
+        public void EliminarLibro(LibrosDTO libroEliminar)
+        {
+            new Datos.Repositories.LibroRepositorio().EliminarLibro(libroEliminar.idLibro);
+        }
+
+        public Boolean VerificarUnidades(Int32 idLibro)
+        {
+            return new Datos.Repositories.LibroRepositorio().VerificarUnidades(idLibro);
         }
     }
 }

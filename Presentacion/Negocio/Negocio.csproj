@@ -42,6 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
+    <Compile Include="EntitiesDTO\CategoriaDTO.cs" />
     <Compile Include="EntitiesDTO\LibroConUnidadesDTO.cs" />
     <Compile Include="EntitiesDTO\LibrosDTO.cs" />
     <Compile Include="Management\LibroManagement.cs" />
